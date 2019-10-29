@@ -2,7 +2,7 @@ package atividadeGB.br.unisinos.tamanho;
 
 import atividadeGB.br.unisinos.roupa.*;
 
-public abstract class Tamanho {
+public abstract class Tamanho extends Roupa{
 	public char Sigla;
 	public Roupa Roupa;
 	

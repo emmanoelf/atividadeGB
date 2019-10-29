@@ -1,5 +1,8 @@
 package atividadeGB.br.unisinos;
 
+import atividadeGB.br.unisinos.roupa.*;
+import atividadeGB.br.unisinos.tamanho.*;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -12,6 +15,9 @@ public class Main {
         	Entrega entrega = sf.createEntrega();
 		
 		//adicionar item Compra
+		Roupa roupa = new Calca();
+		roupa = new Medio(roupa);
+		//roupa.preco();
 		
 		//escolher metodo Pagamento
 		
