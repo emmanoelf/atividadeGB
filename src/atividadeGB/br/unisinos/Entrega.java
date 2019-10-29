@@ -1,0 +1,7 @@
+class Entrega{
+
+    public Entrega(){
+
+    }
+
+}
