@@ -11,9 +11,14 @@ class VendaFacade{
 
     public void finalizarVenda() {
         this.pagamento.validarPagamento();
-        this.compra.setStatus(this.pagamento.setStatus());
+        if(this.pagamento.getStatus().equals("Pagamento Aprovado")){
+            this.compra.setStatus("Finalizado");
+        } else{
+            this.compra.setStatus("Aguardando Pagamento");
+        }
+        
 
-        if(this.compra.isOk()){
+        if(this.compra.isOK()){
             this.entrega.adicionarFilaDeEnvio(this.compra);
         }
 
