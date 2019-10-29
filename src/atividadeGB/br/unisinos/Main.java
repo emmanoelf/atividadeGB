@@ -11,9 +11,12 @@ public class Main {
         	Pagamento pag = sf.createPagamento();
         	Entrega entrega = sf.createEntrega();
 		
-		//adicionar item carrinho
+		//adicionar item Compra
 		
-		//escolher metodo pagamento
+		//escolher metodo Pagamento
+		
+		//escolher metodo Entrega
+		entrega.setTipoEntrega("Sedex");
 		
 		//finalizar compra
 		VendaFacade vf = new VendaFacade(compra, pagamento, entrega);
