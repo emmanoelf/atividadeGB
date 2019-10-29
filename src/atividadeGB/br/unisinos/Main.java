@@ -16,6 +16,8 @@ public class Main {
 		//escolher metodo pagamento
 		
 		//finalizar compra
+		VendaFacade vf = new VendaFacade(compra, pagamento, entrega);
+        	vf.finalizarVenda();
 	}
 
 }
