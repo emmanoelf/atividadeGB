@@ -1,0 +1,7 @@
+class Compra{
+
+    public Compra(){
+        
+    }
+    
+}
